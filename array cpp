@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+    vector<string> orang = {"Budi", "Siti"};
+
+    cout << orang[0] << endl;
+
+    orang.insert(orang.begin(), "Roni");
+    orang.insert(orang.begin() + 2, "Joko");
+    orang.push_back("Dewi");
+    
+    cout << "setelah ditambah: ";
+    for (const string& item : orang) {
+        cout << item << " ";
+    }
+    cout << endl;
+    
+    orang.erase(orang.begin());
+    orang.erase(orang.begin() + 1);
+    orang.pop_back();
+    
+    cout << "setelah dihapus: ";
+    for (const string& item : orang) {
+        cout << item << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
