@@ -1,6 +1,13 @@
 let orang = ["Budi", "Siti"];
-orang.unshift("Roni");
-orang.push("Dewi");
-orang.shift();
 
-console.log("hasil akhir:", orang);
+console.log(orang[0]);
+
+orang.unshift("Roni");
+orang.splice(2, 0, "Joko");
+orang.push("Dewi");
+console.log("setelah ditambah:", orang);
+
+orang.shift();
+orang.splice(1, 1);
+orang.pop();
+console.log("setelah dihapus", orang);
