@@ -1,0 +1,10 @@
+let daftarlagu = ["Ini Abadi", "Monokrom"];
+
+console.log(daftarlagu[0]);
+
+daftarlagu.splice(1, 0, "everything u are");
+daftarlagu.push("Aitakatta");
+console.log("setelah ditambah:", daftarlagu);
+
+daftarlagu.shift();
+console.log("setelah dihapus", daftarlagu);
