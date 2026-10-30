@@ -1,0 +1,10 @@
+let tas = ["Pedang Kayu", "Perisai Besi"];
+
+console.log(tas[0]);
+
+tas.unshift("Potion Darah");
+tas.splice(2, 0, "Busur Panah");
+console.log("setelah ditambah:", tas);
+
+tas.pop();
+console.log("setelah dihapus", tas);
