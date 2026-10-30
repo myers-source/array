@@ -1,0 +1,29 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+    vector<string> daftarlagu = {"Ini Abadi", "Monokrom"};
+
+    cout << daftarlagu[0] << endl;
+
+    daftarlagu.insert(daftarlagu.begin() + 1, "everything u are");
+    daftarlagu.push_back("Aitakatta");
+    
+    cout << "setelah ditambah: ";
+    for (const string& item : daftarlagu) {
+        cout << item << " ";
+    }
+    cout << endl;
+    
+    daftarlagu.erase(daftarlagu.begin());
+    
+    cout << "setelah dihapus: ";
+    for (const string& item : daftarlagu) {
+        cout << item << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
